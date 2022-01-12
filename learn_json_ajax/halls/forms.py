@@ -5,9 +5,9 @@ from django import forms
 class Videoform(forms.ModelForm):
     class Meta:
         model = Video
-        fields = ['title', 'url', 'youtube_id']
+        fields = ['url']
         labels = {
-            'youtube_id': 'Youtube Id', 'url': 'URL', 'title': 'Title'
+            'url': 'YouTube URL'
         }
 
 
