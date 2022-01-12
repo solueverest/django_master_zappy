@@ -3,11 +3,12 @@
 
 {% block content %}
  <div class="container">
- <h2>Create a Hall</h2>
+ <h2>Edit a Hall</h2>
  <form method="post">
  {% csrf_token %}
  {{ form.as_p }}
- <button type="submit" class="btn btn-primary">Create</button>
+ <button type="submit" class="btn btn-primary">Save</button>
  </form>
+ <a href="{% url 'delete' hall.id %}" class="btn btn-danger">Delete</a>
  </div>
 {% endblock %}
